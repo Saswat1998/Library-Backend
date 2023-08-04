@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 export const sequelize = new Sequelize('books', 'root', 'saswat@1998', {
-    host: 'localhost',
+    host: 'host.docker.internal', // or the actual IP address of your host machine
     dialect: 'mysql',
 });
 

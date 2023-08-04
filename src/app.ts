@@ -8,8 +8,5 @@ const port = 3000;
 app.use(express.json());
 app.use(bookRoutes)
 
-sequelize.sync().then(() => {
-    app.listen(port, () => {
-        console.log("Server running!");
-    });
-});
+
+export default app;
